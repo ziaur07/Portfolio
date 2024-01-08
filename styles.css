@@ -646,3 +646,7 @@ footer a i{
         
     }
 }
+
+.additional-content {
+    display: none;
+}

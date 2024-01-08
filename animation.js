@@ -34,3 +34,27 @@ scrollBottom.forEach((el) => observer.observe(el)); // Corrected the variable na
 
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el) => observer.observe(el)); // Corrected the variable name
+
+
+// read more button
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get references to the button and additional content
+    const readMoreButton = document.getElementById('readMoreButton');
+    const additionalContent = document.querySelector('.additional-content');
+
+    // Add click event listener to the button
+    readMoreButton.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Toggle the visibility of the additional content
+        if (additionalContent.style.display === 'none') {
+            additionalContent.style.display = 'block';
+            readMoreButton.innerText = 'Read less';
+        } else {
+            additionalContent.style.display = 'none';
+            readMoreButton.innerText = 'Read more';
+        }
+    });
+});
