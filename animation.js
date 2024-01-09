@@ -81,3 +81,16 @@ window.addEventListener("mousemove", function (e){
     }, {duration: 500, fill:"forwards"});
 
 });
+
+
+// You can use this script to sync with your music beats
+// For simplicity, this example uses a timer to simulate beats
+
+const beatImage = document.getElementById('beatImage');
+
+setInterval(() => {
+    beatImage.classList.add('beat');
+    setTimeout(() => {
+        beatImage.classList.remove('beat');
+    }, 200); // Adjust the duration of the beat effect as needed
+}, 1000); // Adjust the interval to sync with your music beats

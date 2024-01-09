@@ -301,18 +301,41 @@ a.btn:hover{
 
  .home-image{
     position: relative;
+    animation: beatAnimation 3s infinite alternate;
  }
 
  .img-box{
-    text-align: center;        
+    text-align: center; 
+    overflow: hidden;
+    position: relative;
+    width: 400px; /* Set the desired size */
+    height: 400px; /* Set the same size as width */  
+    margin-left: 220px    
  }
 
- .img-box img{
+ /*.img-box img{
+    border-radius: 50%;
+    width: 400px; /* Set the desired size */
+ /*   height: 400px; /* Set the same size as width */
+ .rounded-image {
+    border-radius: 50%;
     width: 100%;
-    max-width: 350PX;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes beatAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+ 
    
- }
+ 
 
 .liquid-shape{
     position: absolute;
